@@ -19,8 +19,6 @@ public class Cat_4 {
         Cat_4 rex = new Cat_4("Rex");
 
 
-
-
         // Call the meow method on the cat instance
         cat.meow();
         cat.meow();
