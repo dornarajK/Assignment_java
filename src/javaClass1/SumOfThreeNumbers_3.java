@@ -1,3 +1,5 @@
+package javaClass1;
+
 import java.util.Scanner;
 
 public class SumOfThreeNumbers_3 {
@@ -13,9 +15,12 @@ public class SumOfThreeNumbers_3 {
         System.out.println("Give the third number:");
         int third = Integer.parseInt(scanner.nextLine());
         int sum = first + second + third;
+        int product =  first * second * third;
+        float avrage = sum/3;
 
         System.out.println("The sum of the numbers is " + (sum));
-        System.out.println("The avrage of the numbers is " + (sum/3));
+        System.out.println("The product of the numbers is " + (product));
+        System.out.println("The avrage of the numbers is " + (avrage));
 
     }
 }
