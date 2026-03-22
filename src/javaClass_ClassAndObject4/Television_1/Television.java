@@ -1,4 +1,4 @@
-package javaClass_ClassAndObject4;
+package javaClass_ClassAndObject4.Television_1;
 
 public class Television {
 
