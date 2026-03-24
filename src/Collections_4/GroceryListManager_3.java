@@ -1,19 +1,24 @@
 package Collections_4;
-// Task 2: Total Cost Calculation
+// Task 3: Categorizing Items
 import java.util.HashMap;
 import java.util.Map;
 
-public class GroceryListManager_2 {
+public class GroceryListManager_3 {
 
 
     Map<String, Double> groceryList = new HashMap<>();
+    Map<String, String> groceryCategory = new HashMap<>();
 
-    public void addItem(String item, double cost){
+
+
+    public void addItem(String item, double cost, String category){
         groceryList.put(item, cost);
+        groceryCategory.put(item, category);
     }
 
     public void removeItem(String item){
         groceryList.remove(item);
+        groceryCategory.remove(item);
     }
 
     public String displayList(){
@@ -36,6 +41,20 @@ public class GroceryListManager_2 {
         return total;
     }
 
+    public String displayByCategory(String category){
+        StringBuilder result = new StringBuilder();
+        int index =1;
+
+        for(String item: groceryList.keySet()){
+            if(groceryCategory.get(item).equalsIgnoreCase(category)){
+                result.append(index).append(". ").append(item).append(" - ").append(groceryCategory.get(item)).append("\n");
+                index++;
+            }
+
+        }
+        return result.toString();
+    }
+
 
 
     public boolean checkItem(String item){
@@ -43,13 +62,19 @@ public class GroceryListManager_2 {
     }
 
     public static void main(String[] args) {
-        GroceryListManager_2 manager = new GroceryListManager_2();
+        GroceryListManager_3 manager = new GroceryListManager_3();
         System.out.println("Grocery List:");
-        manager.addItem("apple" , 10.00);
-        manager.addItem("Milk" , 10.00);
-        manager.addItem("Bread" , 10.00);
+        manager.addItem("apple" , 10.00, "Fruits");
+        manager.addItem("banana" , 50.00, "Fruits");
+        manager.addItem("orange" , 60.00, "Fruits");
+        manager.addItem("Milk", 10.00, "Dairy" );
+        manager.addItem("Bread" , 10.00, "Bakery");
 
         System.out.println(manager.displayList());
+
+        System.out.println(manager.displayByCategory("Fruits"));
+        System.out.println(manager.displayByCategory("Dairy"));
+
         System.out.println("Total cost " + manager.calculateTotalCost() + "€");
 
         System.out.println("Is \"Milk\" in the grocery list? " + manager.checkItem("Milk"));
