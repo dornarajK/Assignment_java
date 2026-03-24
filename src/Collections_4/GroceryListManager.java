@@ -1,7 +1,6 @@
-package Collections_4.GroceryListManager_1;
+package Collections_4;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class GroceryListManager {
 
