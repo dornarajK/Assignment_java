@@ -1,10 +1,9 @@
 package Collections_4;
 
-import java.sql.SQLOutput;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GroceryListManager_4 {
+public class GroceryListManager_5 {
 
     Map<String, Double> groceryList = new HashMap<>();
     Map<String, String> groceryCategory = new HashMap<>();
@@ -37,8 +36,8 @@ public class GroceryListManager_4 {
 
     public double calculateTotalCost(){
         double total = 0;
-        for(double cost: groceryList.values()){
-            total += cost;
+        for(String item: groceryList.keySet()){
+            total += groceryList.get(item) * groceryQuantity.get(item);
         }
         return total;
     }
@@ -92,22 +91,32 @@ public class GroceryListManager_4 {
 
     // Main
     public static void main(String[] args) {
-        GroceryListManager_4 manager = new GroceryListManager_4();
+        GroceryListManager_5 manager = new GroceryListManager_5();
 
         System.out.println("Grocery List:");
-        manager.addItem("apple" , 10.00, "Fruits", 3);
-        manager.addItem("banana" , 50.00, "Fruits", 5);
-        manager.addItem("orange" , 60.00, "Fruits", 5);
-        manager.addItem("Milk", 10.00, "Dairy", 0 );
-        manager.addItem("Bread" , 10.00, "Bakery", 1);
+        manager.addItem("apple" , 6.00, "Fruits", 3);
+        manager.addItem("banana" , 3.00, "Fruits", 5);
+        manager.addItem("orange" , 5.00, "Fruits", 5);
+        manager.addItem("Milk", 4.00, "Dairy", 0 );
+        manager.addItem("Bread" , 2.00, "Bakery", 1);
 
+        System.out.println("full List");
         System.out.println(manager.displayList());
 
+        System.out.println("Items by Categary");
+        System.out.println("Dairy: ");
         System.out.println(manager.displayByCategory("Dairy"));
+        System.out.println("Fruits");
+        System.out.println(manager.displayByCategory("Fruits"));
+        System.out.println("Bakery");
+        System.out.println(manager.displayByCategory("Bakery"));
 
+        System.out.println("Update Quantity of Bread");
         manager.updateQuantity("Bread", 2);
-        System.out.println("After updating quantity:");
+
+        System.out.println("After updating quantitydisplay available items:");
         System.out.println(manager.displayAvailableItems());
+
 
         System.out.println("Total cost " + manager.calculateTotalCost() + "€");
 
