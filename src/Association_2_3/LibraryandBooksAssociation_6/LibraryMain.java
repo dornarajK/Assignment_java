@@ -8,10 +8,10 @@ public class LibraryMain {
         Book book1 = new Book("Introduction to Java Programming", "John Smith", 2020);
         Book book2 = new Book("Data Structures and Algorithms", "Jane Doe", 2018);
         Book book3 = new Book("The Art of Fiction", "Alice Johnson", 2019);
-        User joku1 = new User("joku", 30);
+        User joke1 = new User("joku", 30);
         User joku2 = new User("joku2", 10);
 
-        library.addUser(joku1);
+        library.addUser(joke1);
         library.addUser(joku2);
 
         book2.setRating(3.5);
@@ -33,17 +33,11 @@ public class LibraryMain {
 
         System.out.println("users borrowing books: ");
 
-        library.borrowBookByUser(joku1, "The Art of Fiction");
+        library.borrowBookByUser(joke1, "The Art of Fiction");
         library.borrowBookByUser(joku2, "Data Structures and Algorithms");
         System.out.println("user returns a book");
-        library.returnBookByUser(joku1, joku1.borrowed.get(0));
-        joku1.displayBorrowBook();
-
-
-
-
-
-
+        library.returnBookByUser(joke1, joke1.borrowed.get(0));
+        joke1.displayBorrowBook();
 
     }
 
