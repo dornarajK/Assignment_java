@@ -24,7 +24,7 @@ public class Motorcycle implements Vehicle{
 
     @Override
     public String getInfo(){
-        return String.format("Motorcycle info: " + type + fuel + color);
+        return String.format("Motorcycle info: \n " + type + ", " + fuel + ", "+ color);
     }
 
 }

@@ -25,7 +25,7 @@ public class Bus implements Vehicle{
 
     @Override
     public String getInfo(){
-        return String.format("bus info: " + type + fuel + color);
+        return String.format("bus info: \n" + type +", " + fuel +", "+ color);
     }
 
 

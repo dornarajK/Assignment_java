@@ -12,12 +12,14 @@ public class VehicleDemo {
         car.start();
         car.stop();
         System.out.println(car.getInfo());
+        System.out.println("\n");
 
 
         // Motorcycle
         MoVehicle.start();
         MoVehicle.stop();
         System.out.println(MoVehicle.getInfo());
+        System.out.println("\n");
 
 
         // Bus

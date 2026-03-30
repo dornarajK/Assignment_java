@@ -24,7 +24,7 @@ public class Car implements Vehicle {
 
     @Override
     public String getInfo(){
-        return String.format("Car info: " + type+", " + fuel+", " + color);
+        return String.format("Car info: \n " + type+", " + fuel+", " + color);
     }
 
 
