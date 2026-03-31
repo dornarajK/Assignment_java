@@ -1,14 +1,18 @@
-package Interface3_2;
+package Interface3_2.Task2;
 
-public class Motorcycle implements Vehicle{
+public class Motorcycle extends AbstractVehicle {
     private String type;
     private String fuel;
     private String color;
 
     public Motorcycle(String type, String fuel, String color){
-        this.type = type;
-        this.fuel = fuel;
-        this.color = color;
+        super(type, fuel, color);
+
+    }
+
+    @Override
+    public String getVehicleName(){
+        return "Motorcycle";
     }
 
     @Override
@@ -22,9 +26,5 @@ public class Motorcycle implements Vehicle{
 
     }
 
-    @Override
-    public String getInfo(){
-        return String.format("Motorcycle info: \n " + type + ", " + fuel + ", "+ color);
-    }
 
 }

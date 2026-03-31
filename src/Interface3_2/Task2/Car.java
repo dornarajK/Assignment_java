@@ -1,15 +1,17 @@
-package Interface3_2;
+package Interface3_2.Task2;
 
-public class Car implements Vehicle {
+public class Car extends AbstractVehicle {
     private String type;
     private String fuel;
     private String color;
 
     public Car (String type, String fuel, String color){
-        this.type = type;
-        this.fuel = fuel;
-        this.color = color;
+        super(type, fuel, color);
+
     }
+
+    @Override
+    public String getVehicleName() {return "Car";}
 
     @Override
     public void start(){
@@ -20,11 +22,6 @@ public class Car implements Vehicle {
     @Override
     public void stop() {
         System.out.println("Car is Stoping");
-    }
-
-    @Override
-    public String getInfo(){
-        return String.format("Car info: \n " + type+", " + fuel+", " + color);
     }
 
 
