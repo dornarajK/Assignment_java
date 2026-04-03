@@ -70,12 +70,12 @@ public class Library {
 
     }
 
-    public void returnBook(User joku1, Book book){
+    public void returnBook(Book book){
         books.add(book);
     }
     public void returnBookByUser( User user, Book book){
         user.returnBooks(book);
-        returnBook(user, book);
+        returnBook(book);
         System.out.println();
     }
 
