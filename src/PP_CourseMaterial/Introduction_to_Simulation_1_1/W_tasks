@@ -1,0 +1,16 @@
+Orientation tasks 1 (Assignments, each task 2p)
+W 1.
+supermarket kassajärjestelmä.
+Esimerkiksi asiakas tulee satunnaiset jonoon ja simulaation avulla, voidaan määrittä kuinka paljon kassa tarvitaan.
+Miksi simulointi on paremmin tässä tilanteessa.
+Koska tämän kokeilemien oikeassa voi harita asiakkaille.
+Simulaatiossa voidaan testata useita vaihtoehtoja.
+Vähemmän turhaa energiankulutusta.
+
+
+W 2.
+Variability = asiakas tulee eri aikoina ja erilaisia tavaroita
+Complexity = Järjestelmä sisältää asiakkaat, jonot ja kassat, ja asiakkaat valitsevat, mihin jonoon he liittyvät, mikä tekee ennustamisesta vaikeaa.
+Interconnectedness = Kaikki osat vaikuttavat toisiinsa. Jos yksi jono on hidas, se vaikuttaa muihin. Kassan avaaminen tai sulkeminen muuttaa koko järjestelmää.
+Conclusion = järjestelmä soveltuu simulointiin, koska se on dynaaminen ja vaikea analysoida tosielämässä.
+
