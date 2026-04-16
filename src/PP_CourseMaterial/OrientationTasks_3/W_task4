@@ -1,0 +1,14 @@
+
+1. Normal Distribution: Normaalijakauma on kellomainen, symmetrinen jakauma, jossa useimmat arvot ovat lähellä keskiarvoa.
+Esimerkkejä tosielämästä: Ihmisten pituus ja Verenpaine
+Käyttö simulaatiossa: kun arvot keskittyvät luonnostaan keskiarvon ympärille.
+
+______________________
+2. Poisson Distribution:kuvaa tiettyyn aikaan tai paikkaan liittyvien tapahtumien lukumäärää.
+Esimerkkejä tosielämästä: Myymälään saapuvien asiakkaiden määrä
+Käyttö simulaatiossa: Se on hyödyllinen mallinnettaessa, kuinka usein tapahtumia tapahtuu ajan kuluessa.
+
+______________________
+3. Exponential Distribution: on tapahtumien välinen aika.
+Esimerkkejä tosielämästä: Odotusaika seuraavaa asiakasta varten
+Käyttö simulaatiossa: Sitä käytetään odotusaikojen tai viivästysten simulointiin.

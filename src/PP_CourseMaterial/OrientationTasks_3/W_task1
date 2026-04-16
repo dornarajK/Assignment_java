@@ -1,0 +1,6 @@
+W Task 1:
+    1. kerätään jokaisen oppilaan ikä. Lasketaan tulokset ja kumulatiivisetprosenttiosuusrajat. samanlailla kuin agedistribution[][] taulu
+    2. Luo 2D-hakutaulukko
+    3. Koodaa tämä kaksisarakkeiseksi taulukoksi, täsmälleen kuten esimerkissä oleva agedistribution[][]:
+    Silmukan jälkeen iteroi generatedAges[]-funktion läpi ja tulosta kaikki nollasta poikkeavat merkinnät — ikä, määrä ja prosentuaalinen osuus
+

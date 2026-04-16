@@ -1,0 +1,3 @@
+W task 3. 
+(W) Why can't a Singleton object be created from outside the Singleton class using the new operation?
+koska konstruktori on tehty yksityiseksi.
