@@ -1,0 +1,15 @@
+Task W_3:
+Supermarket Checkout System
+
+
+Arrivals → [Queue 1] → (Entrance / Shopping Area)
+                     ↓
+              [Queue 2] → (Self Checkout) → Exit
+                     ↓
+              [Queue 3] → (Cashier) → [Queue 4] → (Payment / Bagging) → Exit
+
+
+Health Centre
+Arrivals → [Queue 1] → (Reception) → [Queue 2] → (Nurse)
+                                   → [Queue 3] → (Doctor)
+                                   → [Queue 4] → (Lab) → Exit

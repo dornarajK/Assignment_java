@@ -1,0 +1,46 @@
+   1. (W)
+
+
+    Pankki koostuu asiakkaista, jotka saapuvat, jonottavat,
+    joita palvelevat kassat ja jotka poistuvat palvelun jälkeen.
+    Pankkia voidaan mallintaa jonotusjärjestelmänä, jossa on palvelupisteitä.
+
+    Arrival count (A):
+    Saapuvien asiakkaiden määrä tietyssä ajassa.
+
+    Customer count (C):
+    Suoritettujen asiakkaiden määrä on niiden asiakkaiden määrä, jotka ovat lopettaneet palvelunsa ja poistuvat pankista.
+     Jos tämä on pienempi kuin saapuneiden asiakkaiden määrä, jonot kasvavat.
+
+
+    Busy time (B):
+    Tämä osoitaa, kuinka kauan kassa palvelee aktiivisesti asiakkaita.
+    Se osoittaa, kuinka tehokkaasti kassa käyttää aikaansa asiakkaiden palvelemiseen.
+
+    Total time (T):
+    Tämä on kokonaisaika, joka kuluu asiakkaiden palvelemiseen, mukaan lukien odotus- ja palveluaika.
+
+    Utilization (U):
+    Käyttöaste osoittaa, kuinka paljon kassatyöntekijällä on käytettävissä olevasta ajasta kiire.
+    Korkea käyttöaste tarkoittaa henkilökunnan tehokasta käyttöä, mutta se voi aiheuttaa pitkiä jonoja.
+
+    Throughput (x):
+    Läpäisykyky mittaa, kuinka monta asiakasta voidaan palvella tietyssä ajassa.
+    Se auttaa arvioimaan pankin kapasiteettia ja tehokkuutta.
+
+    Service time (S):
+    Palveluaika on aika, joka kuluu asiakkaan palvelemiseen.
+    Se vaikuttaa suoraan siihen, kuinka nopeasti asiakkaat saavat palvelua ja kuinka pitk
+
+    Response time (R):
+    Vastausaika on kokonaisaika, jonka asiakas viettää järjestelmässä (odottaminen + palvelu).
+    Esimerkki: Jos asiakas odottaa 10 minuuttia ja häntä palvellaan 5 minuuttia → yhteensä 15 minuuttia.
+
+    Average response time (R):
+    Keskimääräinen vastausaika on kaikkien asiakkaiden vastausaikojen keskiarvo.
+
+    Average service time (S):
+    Näyttää, kuinka monta asiakasta järjestelmässä on keskimäärin
+
+
+
